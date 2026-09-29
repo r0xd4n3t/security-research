@@ -7,6 +7,7 @@ material, and reproducibility evidence.
 
 ## Advisories
 
+- [CVE-2026-77244](CVE-2026-77244/) — CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian
 - [CVE-2026-82377](CVE-2026-82377/) — CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs
 - [CVE-2026-87902](CVE-2026-87902/) — CVE-2026-87902: WordPress page-template traversal and local PHP inclusion
 
