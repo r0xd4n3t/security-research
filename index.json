@@ -9,6 +9,7 @@
       "cvss": {
         "score": 9.8,
         "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
         "version": "3.1"
       },
       "cvss_display": "9.8 (v3.1)",
@@ -74,6 +75,7 @@
       "cvss": {
         "score": 9.2,
         "severity": "CRITICAL",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
         "version": "4.0"
       },
       "cvss_display": "9.2 (v4.0)",
@@ -137,6 +139,7 @@
       "cvss": {
         "score": 9.9,
         "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
         "version": "3.1"
       },
       "cvss_display": "9.9 (v3.1)",
@@ -177,6 +180,7 @@
       "cvss": {
         "score": 10.0,
         "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
         "version": "3.1"
       },
       "cvss_display": "10 (v3.1)",
@@ -210,7 +214,7 @@
     }
   ],
   "advisory_count": 4,
-  "generated_at": "2026-09-30T07:53:01.203752Z",
+  "generated_at": "2026-09-30T08:05:11.936718Z",
   "maintainer": "r0xd4n3t",
   "repository": "https://github.com/r0xd4n3t/security-research",
   "schema_version": 1

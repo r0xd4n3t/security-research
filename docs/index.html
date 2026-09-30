@@ -22,6 +22,11 @@ header h1{font-size:1.9rem;margin:0 0 6px}header p{color:var(--mut);margin:0 0 1
 .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
 .links a{color:var(--acc);text-decoration:none;margin-right:14px;font-size:.9rem}
 footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:20px}
+#q{flex:1;min-width:200px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:.95rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mut);cursor:pointer;font-size:.85rem}
+.chip.active{background:var(--acc);color:#001018;border-color:var(--acc)}
 </style>
 </head>
 <body>
@@ -36,8 +41,16 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
         <a href="https://github.com/r0xd4n3t/security-research/blob/main/METHODOLOGY.md">Methodology</a>
       </div>
     </header>
-    <section class="grid">
-      <article class="card">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search CVE, title, or CWE…" aria-label="Search advisories">
+      <div class="chips">
+        <button class="chip active" data-f="all">All</button>
+        <button class="chip" data-f="crit">Critical</button>
+        <button class="chip" data-f="kev">CISA KEV</button>
+      </div>
+    </div>
+    <section class="grid" id="grid">
+      <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-92161 cve-2026-92161: unverified discord email trusted by friendsofflarum oauth cwe-345">
         <div class="row">
           <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161">CVE-2026-92161</a>
           <span class="badge crit">CVSS 9.8 (v3.1)</span>
@@ -55,7 +68,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
           <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161/poc">Validator</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-sev="crit" data-kev="1" data-text="cve-2026-87902 cve-2026-87902: wordpress page-template traversal and local php inclusion cwe-98">
         <div class="row">
           <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902">CVE-2026-87902</a>
           <span class="badge crit">CVSS 9.2 (v4.0)</span>
@@ -73,7 +86,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
           <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902/poc">Validator</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-82377 cve-2026-82377: cross-weblog missing authorization in apache roller xml-rpc apis cwe-862">
         <div class="row">
           <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377">CVE-2026-82377</a>
           <span class="badge crit">CVSS 9.9 (v3.1)</span>
@@ -91,7 +104,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
           <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377/poc">Validator</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-77244 cve-2026-77244: unauthenticated operator-credential fallback in mcp atlassian cwe-287">
         <div class="row">
           <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244">CVE-2026-77244</a>
           <span class="badge crit">CVSS 10 (v3.1)</span>
@@ -114,5 +127,21 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
       Updated 2026-09-30 · 4 advisories · Every conclusion is limited to the retained validation evidence.
     </footer>
   </div>
+  <script>
+  (function(){
+    var q=document.getElementById("q"),grid=document.getElementById("grid");
+    if(!q||!grid)return;
+    var cards=[].slice.call(grid.querySelectorAll(".card")),f="all";
+    function apply(){var t=(q.value||"").toLowerCase();cards.forEach(function(c){
+      var okT=!t||c.getAttribute("data-text").indexOf(t)>-1;
+      var okF=f==="all"||(f==="crit"&&c.getAttribute("data-sev")==="crit")||(f==="kev"&&c.getAttribute("data-kev")==="1");
+      c.style.display=(okT&&okF)?"":"none";});}
+    q.addEventListener("input",apply);
+    [].slice.call(document.querySelectorAll(".chip")).forEach(function(b){
+      b.addEventListener("click",function(){
+        document.querySelectorAll(".chip").forEach(function(x){x.classList.remove("active");});
+        b.classList.add("active");f=b.getAttribute("data-f");apply();});});
+  })();
+  </script>
 </body>
 </html>

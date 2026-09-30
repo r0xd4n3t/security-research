@@ -32,8 +32,10 @@ Evidence-backed advisories · Isolated validation · Reproducible security resea
 
 A structured [`index.json`](index.json) lists every advisory with its CWE, CVSS, CISA KEV status, affected and fixed versions, upstream references, and evidence checksums — ready for tooling and dashboards.
 
+- 📄 **[`index.json`](index.json)** — machine-readable feed of every advisory.
+- 🏢 **[CSAF 2.0](csaf/)** — OASIS-standard advisory documents for vulnerability-management tooling.
 - 📡 **[Atom feed](feed.xml)** — subscribe to new advisories.
-- 🖥️ **[Web dashboard](https://r0xd4n3t.github.io/security-research/)** — browse advisories in one page.
+- 🖥️ **[Web dashboard](https://r0xd4n3t.github.io/security-research/)** — searchable, filterable view of every advisory.
 - 🛡️ **[Detections](detections/)** — candidate Sigma rules per advisory (experimental; validate before use).
 
 See [`METHODOLOGY.md`](METHODOLOGY.md) for the validation model, [`SECURITY.md`](SECURITY.md) for corrections and coordinated disclosure, and [`CONTRIBUTING.md`](CONTRIBUTING.md) to get involved.
