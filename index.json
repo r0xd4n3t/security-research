@@ -1,0 +1,217 @@
+{
+  "advisories": [
+    {
+      "affected_versions": [
+        "The CVE description identifies releases before 1.7.4 on the 1.x branch and before 2.0.0-beta.4 on the 2.x branch.",
+        "Independently validated vulnerable control: fof/oauth 1.7.3."
+      ],
+      "cve_id": "CVE-2026-92161",
+      "cvss": {
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "version": "3.1"
+      },
+      "cvss_display": "9.8 (v3.1)",
+      "cwe": "CWE-345",
+      "fixed_versions": [
+        "1.7.4 \u2014 identified as fixed in the CVE description and independently validated for the tested email-trust behavior.",
+        "2.0.0-beta.4 \u2014 identified as fixed in the CVE description; not independently tested."
+      ],
+      "ghsa_id": null,
+      "kev": {
+        "date_added": null,
+        "listed": false
+      },
+      "manifest_sha256": "5124ff55e6bac19596797ca6e01e0a1c8ec837e4026ba4566566b55afd7b0552",
+      "paths": {
+        "advisory": "CVE-2026-92161/ADVISORY.md",
+        "directory": "CVE-2026-92161/",
+        "evidence": "CVE-2026-92161/evidence/",
+        "manifest": "CVE-2026-92161/MANIFEST.json",
+        "references": "CVE-2026-92161/REFERENCES.md",
+        "validator": "CVE-2026-92161/poc/"
+      },
+      "published_at": "2026-09-30T05:37:46.944949Z",
+      "references": [
+        "https://github.com/FriendsOfFlarum/oauth/security/advisories/GHSA-g7vj-c29h-3h5m",
+        "https://github.com/FriendsOfFlarum/oauth/commit/baca3466b3b7be51c70a7e0ba966901aefeb344a",
+        "https://github.com/FriendsOfFlarum/oauth/commit/bb4bf376832e6bb68c579715d2a4b5a92c4a2567",
+        "https://github.com/FriendsOfFlarum/oauth/releases/tag/1.7.4",
+        "https://github.com/FriendsOfFlarum/oauth/releases/tag/2.0.0-beta.4"
+      ],
+      "summary": "FriendsOfFlarum OAuth's Discord provider could treat an unverified email address as trusted identity evidence. The CVE description reports that this can enable takeover of an existing Flarum account, including an administrator account. An isolated regression confirmed the email-trust flaw in fof/oauth 1.7.3 and its correction in 1.7.4. End-to-end account takeover through live Discord authentication remains unverified by this research.",
+      "title": "CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth"
+    },
+    {
+      "affected_versions": [
+        "7.1.0 - 7.1.1",
+        "7.0.0 - 7.0.5",
+        "6.9.0 - 6.9.8",
+        "6.8.0 - 6.8.9",
+        "6.7.0 - 6.7.8",
+        "6.6.0 - 6.6.8",
+        "6.5.0 - 6.5.11",
+        "6.4.0 - 6.4.11",
+        "6.3.0 - 6.3.11",
+        "6.2.0 - 6.2.12",
+        "6.1.0 - 6.1.13",
+        "6.0.0 - 6.0.15",
+        "5.9.0 - 5.9.17",
+        "5.8.0 - 5.8.16",
+        "5.7.0 - 5.7.18",
+        "5.6.0 - 5.6.20",
+        "5.5.0 - 5.5.21",
+        "5.4.0 - 5.4.22",
+        "5.3.0 - 5.3.24",
+        "5.2.0 - 5.2.27",
+        "5.1.0 - 5.1.25",
+        "5.0.0 - 5.0.28",
+        "4.9.0 - 4.9.32",
+        "4.8.0 - 4.8.31",
+        "4.7.0 - 4.7.36"
+      ],
+      "cve_id": "CVE-2026-87902",
+      "cvss": {
+        "score": 9.2,
+        "severity": "CRITICAL",
+        "version": "4.0"
+      },
+      "cvss_display": "9.2 (v4.0)",
+      "cwe": "CWE-98",
+      "fixed_versions": [
+        "7.1.2",
+        "7.0.6",
+        "6.9.9",
+        "6.8.10",
+        "6.7.9",
+        "6.6.9",
+        "6.5.12",
+        "6.4.12",
+        "6.3.12",
+        "6.2.13",
+        "6.1.14",
+        "6.0.16",
+        "5.9.18",
+        "5.8.17",
+        "5.7.19",
+        "5.6.21",
+        "5.5.22",
+        "5.4.23",
+        "5.3.25",
+        "5.2.28",
+        "5.1.26",
+        "5.0.29",
+        "4.9.33",
+        "4.8.32",
+        "4.7.37"
+      ],
+      "ghsa_id": "GHSA-7hp8-65ch-5whp",
+      "kev": {
+        "date_added": "2026-09-25",
+        "listed": true
+      },
+      "manifest_sha256": "9cbfaa0cd4076ea7a1c0414693a9a77f6c016c1df1e2d66eb4863048a754c01e",
+      "paths": {
+        "advisory": "CVE-2026-87902/ADVISORY.md",
+        "directory": "CVE-2026-87902/",
+        "evidence": "CVE-2026-87902/evidence/",
+        "manifest": "CVE-2026-87902/MANIFEST.json",
+        "references": "CVE-2026-87902/REFERENCES.md",
+        "validator": "CVE-2026-87902/poc/"
+      },
+      "published_at": "2026-09-29T16:28:46.500390Z",
+      "references": [
+        "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+        "https://wordpress.org/news/2026/09/wordpress-7-1-2-release/",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-87902",
+        "https://patchstack.com/articles/cve-2026-87902-attackers-started-probing-wordpress-sites-hours-after-the-patch/"
+      ],
+      "summary": "An unauthenticated path traversal vulnerability in WordPress page-template resolution can include a readable local PHP file outside the active theme directories when specific theme prerequisites are met. The project advisory rates the issue Critical, with CVSS v4.0 9.2, and describes conditional remote code execution. Independent laboratory validation reproduced the inclusion primitive on WordPress 7.1.1; the same behavior was not reproduced on WordPress 7.1.2. Command execution was not attempted.",
+      "title": "CVE-2026-87902: WordPress page-template traversal and local PHP inclusion"
+    },
+    {
+      "affected_versions": [
+        "Apache Roller 6.1.5"
+      ],
+      "cve_id": "CVE-2026-82377",
+      "cvss": {
+        "score": 9.9,
+        "severity": "CRITICAL",
+        "version": "3.1"
+      },
+      "cvss_display": "9.9 (v3.1)",
+      "cwe": "CWE-862",
+      "fixed_versions": [
+        "Apache Roller 6.1.6"
+      ],
+      "ghsa_id": null,
+      "kev": {
+        "date_added": null,
+        "listed": false
+      },
+      "manifest_sha256": "25ff24d252cc79da9913e8d3ed08a56e7c14962a4dfbb9e75b8856f3894747a1",
+      "paths": {
+        "advisory": "CVE-2026-82377/ADVISORY.md",
+        "directory": "CVE-2026-82377/",
+        "evidence": "CVE-2026-82377/evidence/",
+        "manifest": "CVE-2026-82377/MANIFEST.json",
+        "references": "CVE-2026-82377/REFERENCES.md",
+        "validator": "CVE-2026-82377/poc/"
+      },
+      "published_at": "2026-09-29T19:52:43.192733Z",
+      "references": [
+        "https://github.com/apache/roller/pull/164",
+        "https://roller.apache.org/security.html",
+        "https://lists.apache.org/thread/phxx56n0w6jjqzto2my3ot8hto0qjvn8",
+        "https://www.openwall.com/lists/oss-security/2026/09/25/10"
+      ],
+      "summary": "Apache Roller 6.1.5 contains a missing authorization vulnerability in its legacy Blogger and MetaWeblog XML-RPC APIs. The upstream description reports that authenticated users can read, modify, or delete content belonging to other weblogs when global XML-RPC support is enabled. An isolated local authorization regression test confirmed an authorization failure in 6.1.5 and the expected denial in 6.1.6. The reported severity is Critical, with CVSS v3.1 score 9.9 (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "title": "CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs"
+    },
+    {
+      "affected_versions": [
+        "Before 0.22.0, according to the CVE description.",
+        "Version 0.21.1 independently reproduced in the laboratory."
+      ],
+      "cve_id": "CVE-2026-77244",
+      "cvss": {
+        "score": 10.0,
+        "severity": "CRITICAL",
+        "version": "3.1"
+      },
+      "cvss_display": "10 (v3.1)",
+      "cwe": "CWE-287",
+      "fixed_versions": [
+        "0.22.0, identified as fixed in the CVE description and independently validated for the tested authentication and credential-fallback checks."
+      ],
+      "ghsa_id": null,
+      "kev": {
+        "date_added": null,
+        "listed": false
+      },
+      "manifest_sha256": "df4b785fb9cef2924274bd2a025897ac6df0eb9b3dcd2e637864d96594818ae4",
+      "paths": {
+        "advisory": "CVE-2026-77244/ADVISORY.md",
+        "directory": "CVE-2026-77244/",
+        "evidence": "CVE-2026-77244/evidence/",
+        "manifest": "CVE-2026-77244/MANIFEST.json",
+        "references": "CVE-2026-77244/REFERENCES.md",
+        "validator": "CVE-2026-77244/poc/"
+      },
+      "published_at": "2026-09-29T20:12:33.569239Z",
+      "references": [
+        "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-wrhw-j3f9-8vc6",
+        "https://github.com/sooperset/mcp-atlassian/pull/1448",
+        "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460",
+        "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
+      ],
+      "summary": "MCP Atlassian versions before 0.22.0 are reported to accept HTTP requests without a verified user identity and fall back to globally configured operator credentials. An isolated local regression confirmed that v0.21.1 forwarded an unauthenticated request to the downstream application and returned a global Jira fetcher in the fallback check. Version 0.22.0 rejected the tested request with HTTP 401 and blocked the fallback. Successful Atlassian read or write operations were not independently demonstrated.",
+      "title": "CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian"
+    }
+  ],
+  "advisory_count": 4,
+  "generated_at": "2026-09-30T06:05:55.745594Z",
+  "maintainer": "r0xd4n3t",
+  "repository": "https://github.com/r0xd4n3t/security-research",
+  "schema_version": 1
+}

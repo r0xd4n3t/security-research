@@ -21,12 +21,18 @@ Evidence-backed advisories · Isolated validation · Reproducible security resea
 
 ## 🔬 Research Index
 
-| Advisory | Research | Artifacts |
-| :--- | :--- | :--- |
-| **[CVE-2026-92161](CVE-2026-92161/)** | CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth | [Advisory](CVE-2026-92161/ADVISORY.md) · [Evidence](CVE-2026-92161/evidence/) · [Validator](CVE-2026-92161/poc/) |
-| **[CVE-2026-87902](CVE-2026-87902/)** | CVE-2026-87902: WordPress page-template traversal and local PHP inclusion | [Advisory](CVE-2026-87902/ADVISORY.md) · [Evidence](CVE-2026-87902/evidence/) · [Validator](CVE-2026-87902/poc/) |
-| **[CVE-2026-82377](CVE-2026-82377/)** | CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs | [Advisory](CVE-2026-82377/ADVISORY.md) · [Evidence](CVE-2026-82377/evidence/) · [Validator](CVE-2026-82377/poc/) |
-| **[CVE-2026-77244](CVE-2026-77244/)** | CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian | [Advisory](CVE-2026-77244/ADVISORY.md) · [Evidence](CVE-2026-77244/evidence/) · [Validator](CVE-2026-77244/poc/) |
+| Advisory | Summary | CWE | CVSS | KEV | Artifacts |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| **[CVE-2026-92161](CVE-2026-92161/)** | CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth | CWE-345 | 9.8 (v3.1) | — | [Advisory](CVE-2026-92161/ADVISORY.md) · [Evidence](CVE-2026-92161/evidence/) · [Validator](CVE-2026-92161/poc/) |
+| **[CVE-2026-87902](CVE-2026-87902/)** | CVE-2026-87902: WordPress page-template traversal and local PHP inclusion | CWE-98 | 9.2 (v4.0) | 🔴 **KEV** | [Advisory](CVE-2026-87902/ADVISORY.md) · [Evidence](CVE-2026-87902/evidence/) · [Validator](CVE-2026-87902/poc/) |
+| **[CVE-2026-82377](CVE-2026-82377/)** | CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs | CWE-862 | 9.9 (v3.1) | — | [Advisory](CVE-2026-82377/ADVISORY.md) · [Evidence](CVE-2026-82377/evidence/) · [Validator](CVE-2026-82377/poc/) |
+| **[CVE-2026-77244](CVE-2026-77244/)** | CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian | CWE-287 | 10 (v3.1) | — | [Advisory](CVE-2026-77244/ADVISORY.md) · [Evidence](CVE-2026-77244/evidence/) · [Validator](CVE-2026-77244/poc/) |
+
+## 🤖 Machine-readable feed
+
+A structured [`index.json`](index.json) lists every advisory with its CWE, CVSS, CISA KEV status, affected and fixed versions, upstream references, and evidence checksums — ready for tooling, dashboards, and automation.
+
+See [`METHODOLOGY.md`](METHODOLOGY.md) for the validation model, [`SECURITY.md`](SECURITY.md) for corrections and coordinated disclosure, and [`CONTRIBUTING.md`](CONTRIBUTING.md) to get involved.
 
 ## 📊 Repository at a Glance
 
