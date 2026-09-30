@@ -27,6 +27,7 @@ Evidence-backed advisories · Isolated validation · Reproducible security resea
 | **[CVE-2026-87902](CVE-2026-87902/)** | CVE-2026-87902: WordPress page-template traversal and local PHP inclusion | CWE-98 | 9.2 (v4.0) | 🔴 **KEV** | [Advisory](CVE-2026-87902/ADVISORY.md) · [Evidence](CVE-2026-87902/evidence/) · [Validator](CVE-2026-87902/poc/) |
 | **[CVE-2026-82377](CVE-2026-82377/)** | CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs | CWE-862 | 9.9 (v3.1) | — | [Advisory](CVE-2026-82377/ADVISORY.md) · [Evidence](CVE-2026-82377/evidence/) · [Validator](CVE-2026-82377/poc/) |
 | **[CVE-2026-77244](CVE-2026-77244/)** | CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian | CWE-287 | 10 (v3.1) | — | [Advisory](CVE-2026-77244/ADVISORY.md) · [Evidence](CVE-2026-77244/evidence/) · [Validator](CVE-2026-77244/poc/) |
+| **[CVE-2026-59971](CVE-2026-59971/)** | CVE-2026-59971: MySQL MCP Server SSE transport lacks Host validation | CWE-306 | 10 (v3.1) | — | [Advisory](CVE-2026-59971/ADVISORY.md) · [Evidence](CVE-2026-59971/evidence/) · [Validator](CVE-2026-59971/poc/) |
 
 ## 🤖 Feeds, dashboard & detections
 
@@ -44,7 +45,7 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the validation model, [`SECURITY.md`]
 
 | | |
 | :--- | :--- |
-| **Published research** | **4 advisories** |
+| **Published research** | **5 advisories** |
 | **Validation model** | Affected and patched controls in isolated environments |
 | **Evidence integrity** | SHA-256 manifests and retained validation artifacts |
 | **Public PoC policy** | Constrained defensive validators or non-networked evidence verifiers |

@@ -211,10 +211,52 @@
       ],
       "summary": "MCP Atlassian versions before 0.22.0 are reported to accept HTTP requests without a verified user identity and fall back to globally configured operator credentials. An isolated local regression confirmed that v0.21.1 forwarded an unauthenticated request to the downstream application and returned a global Jira fetcher in the fallback check. Version 0.22.0 rejected the tested request with HTTP 401 and blocked the fallback. Successful Atlassian read or write operations were not independently demonstrated.",
       "title": "CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian"
+    },
+    {
+      "affected_versions": [
+        "Before 0.4.2, according to the CVE description; exposure requires SSE transport.",
+        "v0.4.1: Host-validation weakness independently reproduced with MCP SDK 1.30.0."
+      ],
+      "cve_id": "CVE-2026-59971",
+      "cvss": {
+        "score": 10.0,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "version": "3.1"
+      },
+      "cvss_display": "10 (v3.1)",
+      "cwe": "CWE-306",
+      "fixed_versions": [
+        "0.4.2, identified as fixed in the CVE description; Host rejection independently validated with MCP SDK 1.30.0."
+      ],
+      "ghsa_id": null,
+      "kev": {
+        "date_added": null,
+        "listed": false
+      },
+      "manifest_sha256": "c9f014bbd176fa190d31399c2c039c2128f117d4c7087f15b22256b3ef8b96e2",
+      "paths": {
+        "advisory": "CVE-2026-59971/ADVISORY.md",
+        "directory": "CVE-2026-59971/",
+        "evidence": "CVE-2026-59971/evidence/",
+        "manifest": "CVE-2026-59971/MANIFEST.json",
+        "references": "CVE-2026-59971/REFERENCES.md",
+        "validator": "CVE-2026-59971/poc/"
+      },
+      "published_at": null,
+      "references": [
+        "https://github.com/designcomputer/mysql_mcp_server/security/advisories/GHSA-rqfv-2mw9-78g2",
+        "https://github.com/designcomputer/mysql_mcp_server/commit/a96549f4a4d65443fd6e9c7f2324fba9a5c80a82",
+        "https://github.com/designcomputer/mysql_mcp_server/releases/tag/v0.4.2",
+        "https://github.com/designcomputer/mysql_mcp_server/issues/92",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-59971"
+      ],
+      "summary": "MySQL MCP Server before 0.4.2 is reported to expose unauthenticated database operations when SSE transport is enabled and to lack DNS-rebinding protection. An isolated regression test independently confirmed that v0.4.1 accepted a forged Host value while v0.4.2 rejected it with MCP SDK 1.30.0. This establishes the Host-validation primitive; database access and browser-mediated exploitation were not reproduced. Default stdio transport is reported unaffected.",
+      "title": "CVE-2026-59971: MySQL MCP Server SSE transport lacks Host validation"
     }
   ],
-  "advisory_count": 4,
-  "generated_at": "2026-09-30T08:06:32.061727Z",
+  "advisory_count": 5,
+  "generated_at": "2026-09-30T23:40:27.913418Z",
   "maintainer": "r0xd4n3t",
   "repository": "https://github.com/r0xd4n3t/security-research",
   "schema_version": 1

@@ -4,7 +4,7 @@
   <link href="https://github.com/r0xd4n3t/security-research"/>
   <link rel="self" href="https://github.com/r0xd4n3t/security-research/blob/main/feed.xml"/>
   <id>https://github.com/r0xd4n3t/security-research</id>
-  <updated>2026-09-30T08:06:32.063834Z</updated>
+  <updated>2026-09-30T23:40:27.916062Z</updated>
   <author><name>r0xd4n3t</name></author>
   <entry>
     <title>CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth</title>
@@ -33,5 +33,12 @@
     <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244</id>
     <updated>2026-09-29T20:12:33.569239Z</updated>
     <summary>MCP Atlassian versions before 0.22.0 are reported to accept HTTP requests without a verified user identity and fall back to globally configured operator credentials. An isolated local regression confirmed that v0.21.1 forwarded an unauthenticated request to the downstream application and returned a global Jira fetcher in the fallback check. Version 0.22.0 rejected the tested request with HTTP 401 and blocked the fallback. Successful Atlassian read or write operations were not independently demonstrated.</summary>
+  </entry>
+  <entry>
+    <title>CVE-2026-59971: MySQL MCP Server SSE transport lacks Host validation</title>
+    <link href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971"/>
+    <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971</id>
+    <updated>2026-09-30T23:40:27.916062Z</updated>
+    <summary>MySQL MCP Server before 0.4.2 is reported to expose unauthenticated database operations when SSE transport is enabled and to lack DNS-rebinding protection. An isolated regression test independently confirmed that v0.4.1 accepted a forged Host value while v0.4.2 rejected it with MCP SDK 1.30.0. This establishes the Host-validation primitive; database access and browser-mediated exploitation were not reproduced. Default stdio transport is reported unaffected.</summary>
   </entry>
 </feed>

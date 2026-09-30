@@ -122,9 +122,27 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
           <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244/poc">Validator</a>
         </div>
       </article>
+      <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-59971 cve-2026-59971: mysql mcp server sse transport lacks host validation cwe-306">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971">CVE-2026-59971</a>
+          <span class="badge crit">CVSS 10 (v3.1)</span>
+
+        </div>
+        <h2>CVE-2026-59971: MySQL MCP Server SSE transport lacks Host validation</h2>
+        <p>MySQL MCP Server before 0.4.2 is reported to expose unauthenticated database operations when SSE transport is enabled and to lack DNS-rebinding protection. An isolated regression test independently confirmed that v0.4.1 accepted a forged Host value while v0.4.2 rejected it with MCP SDK 1.30.0. This establishes the Host-validation primitive; database access and browser-mediated exploitation were not reproduced. Default stdio transport is reported unaffected.</p>
+        <div class="meta">
+          <span class="badge">CWE-306</span>
+
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971/poc">Validator</a>
+        </div>
+      </article>
     </section>
     <footer>
-      Updated 2026-09-30 · 4 advisories · Every conclusion is limited to the retained validation evidence.
+      Updated 2026-09-30 · 5 advisories · Every conclusion is limited to the retained validation evidence.
     </footer>
   </div>
   <script>
