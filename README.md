@@ -23,6 +23,7 @@ Evidence-backed advisories · Isolated validation · Reproducible security resea
 
 | Advisory | Research | Artifacts |
 | :--- | :--- | :--- |
+| **[CVE-2026-92161](CVE-2026-92161/)** | CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth | [Advisory](CVE-2026-92161/ADVISORY.md) · [Evidence](CVE-2026-92161/evidence/) · [Validator](CVE-2026-92161/poc/) |
 | **[CVE-2026-87902](CVE-2026-87902/)** | CVE-2026-87902: WordPress page-template traversal and local PHP inclusion | [Advisory](CVE-2026-87902/ADVISORY.md) · [Evidence](CVE-2026-87902/evidence/) · [Validator](CVE-2026-87902/poc/) |
 | **[CVE-2026-82377](CVE-2026-82377/)** | CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs | [Advisory](CVE-2026-82377/ADVISORY.md) · [Evidence](CVE-2026-82377/evidence/) · [Validator](CVE-2026-82377/poc/) |
 | **[CVE-2026-77244](CVE-2026-77244/)** | CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian | [Advisory](CVE-2026-77244/ADVISORY.md) · [Evidence](CVE-2026-77244/evidence/) · [Validator](CVE-2026-77244/poc/) |
@@ -31,7 +32,7 @@ Evidence-backed advisories · Isolated validation · Reproducible security resea
 
 | | |
 | :--- | :--- |
-| **Published research** | **3 advisories** |
+| **Published research** | **4 advisories** |
 | **Validation model** | Affected and patched controls in isolated environments |
 | **Evidence integrity** | SHA-256 manifests and retained validation artifacts |
 | **Public PoC policy** | Constrained defensive validators or non-networked evidence verifiers |
