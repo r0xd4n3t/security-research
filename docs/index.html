@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Research — CVE Advisories</title>
+<meta name="description" content="Evidence-backed, independently validated CVE advisories with reproducible isolated-lab proof.">
+<style>
+:root{--bg:#0b0f19;--card:#111827;--fg:#e5e7eb;--mut:#9ca3af;--line:#1f2937;--acc:#38bdf8;--crit:#ef4444;--high:#f59e0b;--med:#3b82f6;--low:#6b7280;--kev:#dc2626}
+@media (prefers-color-scheme:light){:root{--bg:#f8fafc;--card:#fff;--fg:#0f172a;--mut:#475569;--line:#e2e8f0;--acc:#0369a1}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:32px 16px}
+header h1{font-size:1.9rem;margin:0 0 6px}header p{color:var(--mut);margin:0 0 18px}
+.top-links a{color:var(--acc);text-decoration:none;margin-right:16px;font-size:.95rem}
+.grid{display:grid;gap:16px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h2{font-size:1.1rem;margin:10px 0 6px}.card p{color:var(--mut);margin:0 0 12px}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cve{font-weight:700;color:var(--fg);text-decoration:none;font-family:ui-monospace,monospace}
+.badge{font-size:.72rem;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--mut)}
+.badge.crit{background:var(--crit);color:#fff;border:0}.badge.high{background:var(--high);color:#111;border:0}.badge.med{background:var(--med);color:#fff;border:0}.badge.low{background:var(--low);color:#fff;border:0}.badge.kev{background:var(--kev);color:#fff;border:0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.links a{color:var(--acc);text-decoration:none;margin-right:14px;font-size:.9rem}
+footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🛡️ Security Research</h1>
+      <p>Evidence-backed, independently validated CVE advisories by r0xd4n3t.</p>
+      <div class="top-links">
+        <a href="https://github.com/r0xd4n3t/security-research">Repository</a>
+        <a href="https://github.com/r0xd4n3t/security-research/blob/main/index.json">JSON feed</a>
+        <a href="https://github.com/r0xd4n3t/security-research/blob/main/feed.xml">Atom feed</a>
+        <a href="https://github.com/r0xd4n3t/security-research/blob/main/METHODOLOGY.md">Methodology</a>
+      </div>
+    </header>
+    <section class="grid">
+      <article class="card">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161">CVE-2026-92161</a>
+          <span class="badge crit">CVSS 9.8 (v3.1)</span>
+
+        </div>
+        <h2>CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth</h2>
+        <p>FriendsOfFlarum OAuth's Discord provider could treat an unverified email address as trusted identity evidence. The CVE description reports that this can enable takeover of an existing Flarum account, including an administrator account. An isolated regression confirmed the email-trust flaw in fof/oauth 1.7.3 and its correction in 1.7.4. End-to-end account takeover through live Discord authentication remains unverified by this research.</p>
+        <div class="meta">
+          <span class="badge">CWE-345</span>
+
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161/poc">Validator</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902">CVE-2026-87902</a>
+          <span class="badge crit">CVSS 9.2 (v4.0)</span>
+          <span class="badge kev">CISA KEV</span>
+        </div>
+        <h2>CVE-2026-87902: WordPress page-template traversal and local PHP inclusion</h2>
+        <p>An unauthenticated path traversal vulnerability in WordPress page-template resolution can include a readable local PHP file outside the active theme directories when specific theme prerequisites are met. The project advisory rates the issue Critical, with CVSS v4.0 9.2, and describes conditional remote code execution. Independent laboratory validation reproduced the inclusion primitive on WordPress 7.1.1; the same behavior was not reproduced on WordPress 7.1.2. Command execution was not attempted.</p>
+        <div class="meta">
+          <span class="badge">CWE-98</span>
+          <span class="badge">GHSA-7hp8-65ch-5whp</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902/poc">Validator</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377">CVE-2026-82377</a>
+          <span class="badge crit">CVSS 9.9 (v3.1)</span>
+
+        </div>
+        <h2>CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs</h2>
+        <p>Apache Roller 6.1.5 contains a missing authorization vulnerability in its legacy Blogger and MetaWeblog XML-RPC APIs. The upstream description reports that authenticated users can read, modify, or delete content belonging to other weblogs when global XML-RPC support is enabled. An isolated local authorization regression test confirmed an authorization failure in 6.1.5 and the expected denial in 6.1.6. The reported severity is Critical, with CVSS v3.1 score 9.9 (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).</p>
+        <div class="meta">
+          <span class="badge">CWE-862</span>
+
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377/poc">Validator</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244">CVE-2026-77244</a>
+          <span class="badge crit">CVSS 10 (v3.1)</span>
+
+        </div>
+        <h2>CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian</h2>
+        <p>MCP Atlassian versions before 0.22.0 are reported to accept HTTP requests without a verified user identity and fall back to globally configured operator credentials. An isolated local regression confirmed that v0.21.1 forwarded an unauthenticated request to the downstream application and returned a global Jira fetcher in the fallback check. Version 0.22.0 rejected the tested request with HTTP 401 and blocked the fallback. Successful Atlassian read or write operations were not independently demonstrated.</p>
+        <div class="meta">
+          <span class="badge">CWE-287</span>
+
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244/poc">Validator</a>
+        </div>
+      </article>
+    </section>
+    <footer>
+      Updated 2026-09-30 · 4 advisories · Every conclusion is limited to the retained validation evidence.
+    </footer>
+  </div>
+</body>
+</html>

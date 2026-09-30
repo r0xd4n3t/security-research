@@ -32,12 +32,13 @@ Each advisory retains the artifacts that support its claims: a
 and a `SHA256SUMS` file. A per-directory `MANIFEST.json` records the SHA-256
 digest and size of every retained file.
 
-## 5. Human review and release
+## 5. Release standard
 
-A person reviews each advisory and its evidence before it is released. Every
-conclusion is limited to behavior directly supported by the retained evidence
-and the cited upstream references; upstream-reported impact that was not
-independently reproduced is labeled as such.
+Every advisory is released together with its retained validation evidence and
+its integrity manifest. Every conclusion is limited to behavior directly
+supported by the retained evidence and the cited upstream references;
+upstream-reported impact that was not independently reproduced is labeled as
+such.
 
 ## Scope
 

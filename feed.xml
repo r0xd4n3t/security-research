@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Security Research — CVE Advisories</title>
+  <link href="https://github.com/r0xd4n3t/security-research"/>
+  <link rel="self" href="https://github.com/r0xd4n3t/security-research/blob/main/feed.xml"/>
+  <id>https://github.com/r0xd4n3t/security-research</id>
+  <updated>2026-09-30T07:53:01.212912Z</updated>
+  <author><name>r0xd4n3t</name></author>
+  <entry>
+    <title>CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth</title>
+    <link href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161"/>
+    <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-92161</id>
+    <updated>2026-09-30T05:37:46.944949Z</updated>
+    <summary>FriendsOfFlarum OAuth&apos;s Discord provider could treat an unverified email address as trusted identity evidence. The CVE description reports that this can enable takeover of an existing Flarum account, including an administrator account. An isolated regression confirmed the email-trust flaw in fof/oauth 1.7.3 and its correction in 1.7.4. End-to-end account takeover through live Discord authentication remains unverified by this research.</summary>
+  </entry>
+  <entry>
+    <title>CVE-2026-87902: WordPress page-template traversal and local PHP inclusion</title>
+    <link href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902"/>
+    <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-87902</id>
+    <updated>2026-09-29T16:28:46.500390Z</updated>
+    <summary>An unauthenticated path traversal vulnerability in WordPress page-template resolution can include a readable local PHP file outside the active theme directories when specific theme prerequisites are met. The project advisory rates the issue Critical, with CVSS v4.0 9.2, and describes conditional remote code execution. Independent laboratory validation reproduced the inclusion primitive on WordPress 7.1.1; the same behavior was not reproduced on WordPress 7.1.2. Command execution was not attempted.</summary>
+  </entry>
+  <entry>
+    <title>CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs</title>
+    <link href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377"/>
+    <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-82377</id>
+    <updated>2026-09-29T19:52:43.192733Z</updated>
+    <summary>Apache Roller 6.1.5 contains a missing authorization vulnerability in its legacy Blogger and MetaWeblog XML-RPC APIs. The upstream description reports that authenticated users can read, modify, or delete content belonging to other weblogs when global XML-RPC support is enabled. An isolated local authorization regression test confirmed an authorization failure in 6.1.5 and the expected denial in 6.1.6. The reported severity is Critical, with CVSS v3.1 score 9.9 (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).</summary>
+  </entry>
+  <entry>
+    <title>CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian</title>
+    <link href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244"/>
+    <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-77244</id>
+    <updated>2026-09-29T20:12:33.569239Z</updated>
+    <summary>MCP Atlassian versions before 0.22.0 are reported to accept HTTP requests without a verified user identity and fall back to globally configured operator credentials. An isolated local regression confirmed that v0.21.1 forwarded an unauthenticated request to the downstream application and returned a global Jira fetcher in the fallback check. Version 0.22.0 rejected the tested request with HTTP 401 and blocked the fallback. Successful Atlassian read or write operations were not independently demonstrated.</summary>
+  </entry>
+</feed>

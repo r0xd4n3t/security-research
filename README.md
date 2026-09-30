@@ -28,9 +28,13 @@ Evidence-backed advisories · Isolated validation · Reproducible security resea
 | **[CVE-2026-82377](CVE-2026-82377/)** | CVE-2026-82377: Cross-weblog missing authorization in Apache Roller XML-RPC APIs | CWE-862 | 9.9 (v3.1) | — | [Advisory](CVE-2026-82377/ADVISORY.md) · [Evidence](CVE-2026-82377/evidence/) · [Validator](CVE-2026-82377/poc/) |
 | **[CVE-2026-77244](CVE-2026-77244/)** | CVE-2026-77244: Unauthenticated operator-credential fallback in MCP Atlassian | CWE-287 | 10 (v3.1) | — | [Advisory](CVE-2026-77244/ADVISORY.md) · [Evidence](CVE-2026-77244/evidence/) · [Validator](CVE-2026-77244/poc/) |
 
-## 🤖 Machine-readable feed
+## 🤖 Feeds, dashboard & detections
 
-A structured [`index.json`](index.json) lists every advisory with its CWE, CVSS, CISA KEV status, affected and fixed versions, upstream references, and evidence checksums — ready for tooling, dashboards, and automation.
+A structured [`index.json`](index.json) lists every advisory with its CWE, CVSS, CISA KEV status, affected and fixed versions, upstream references, and evidence checksums — ready for tooling and dashboards.
+
+- 📡 **[Atom feed](feed.xml)** — subscribe to new advisories.
+- 🖥️ **[Web dashboard](https://r0xd4n3t.github.io/security-research/)** — browse advisories in one page.
+- 🛡️ **[Detections](detections/)** — candidate Sigma rules per advisory (experimental; validate before use).
 
 See [`METHODOLOGY.md`](METHODOLOGY.md) for the validation model, [`SECURITY.md`](SECURITY.md) for corrections and coordinated disclosure, and [`CONTRIBUTING.md`](CONTRIBUTING.md) to get involved.
 
