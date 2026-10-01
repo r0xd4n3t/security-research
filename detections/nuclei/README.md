@@ -30,7 +30,7 @@ Several CVEs ship a self-contained lab under [`../labs/`](../labs/) that brings 
 | [CVE-2026-92161](../../CVE-2026-92161/) | `CVE-2026-92161.yaml` | experimental scaffold — tune before use | — |
 | [CVE-2026-87902](../../CVE-2026-87902/) | `CVE-2026-87902.yaml` | verified (lab-reproducible) | [lab](../labs/CVE-2026-87902/) |
 | [CVE-2026-82377](../../CVE-2026-82377/) | `CVE-2026-82377.yaml` | experimental scaffold — tune before use | — |
-| [CVE-2026-77244](../../CVE-2026-77244/) | `CVE-2026-77244.yaml` | experimental scaffold — tune before use | — |
+| [CVE-2026-77244](../../CVE-2026-77244/) | `CVE-2026-77244.yaml` | verified (lab-reproducible) | [lab](../labs/CVE-2026-77244/) |
 | [CVE-2026-59971](../../CVE-2026-59971/) | `CVE-2026-59971.yaml` | verified (lab-reproducible) | [lab](../labs/CVE-2026-59971/) |
 | [CVE-2026-53710](../../CVE-2026-53710/) | `CVE-2026-53710.yaml` | experimental scaffold — tune before use | — |
 
