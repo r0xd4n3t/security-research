@@ -285,7 +285,7 @@
         "references": "CVE-2026-53710/REFERENCES.md",
         "validator": "CVE-2026-53710/poc/"
       },
-      "published_at": null,
+      "published_at": "2026-10-01T00:04:30.023846Z",
       "references": [
         "https://github.com/IBM/mcp-context-forge/security/advisories/GHSA-xm98-3vcf-fph7",
         "https://github.com/IBM/mcp-context-forge/commit/63a2900e6301b9c8a483a38d3737a1beb3a7ce89",
@@ -296,7 +296,7 @@
     }
   ],
   "advisory_count": 6,
-  "generated_at": "2026-10-01T00:04:27.551993Z",
+  "generated_at": "2026-10-01T02:28:09.665267Z",
   "maintainer": "r0xd4n3t",
   "repository": "https://github.com/r0xd4n3t/security-research",
   "schema_version": 1
