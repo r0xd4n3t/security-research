@@ -4,7 +4,7 @@
   <link href="https://github.com/r0xd4n3t/security-research"/>
   <link rel="self" href="https://github.com/r0xd4n3t/security-research/blob/main/feed.xml"/>
   <id>https://github.com/r0xd4n3t/security-research</id>
-  <updated>2026-10-01T04:47:04.161829Z</updated>
+  <updated>2026-10-01T07:49:12.916487Z</updated>
   <author><name>r0xd4n3t</name></author>
   <entry>
     <title>CVE-2026-92161: Unverified Discord email trusted by FriendsOfFlarum OAuth</title>
@@ -40,6 +40,13 @@
     <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971</id>
     <updated>2026-09-30T23:40:29.995226Z</updated>
     <summary>MySQL MCP Server before 0.4.2 is reported to expose unauthenticated database operations when SSE transport is enabled and to lack DNS-rebinding protection. An isolated regression test independently confirmed that v0.4.1 accepted a forged Host value while v0.4.2 rejected it with MCP SDK 1.30.0. This establishes the Host-validation primitive; database access and browser-mediated exploitation were not reproduced. Default stdio transport is reported unaffected.</summary>
+  </entry>
+  <entry>
+    <title>CVE-2026-55494: Tugtainer Agent authentication bypass when AGENT_SECRET is unset</title>
+    <link href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-55494"/>
+    <id>https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-55494</id>
+    <updated>2026-10-01T07:49:12.916487Z</updated>
+    <summary>Tugtainer Agent versions before 1.30.4 are described as allowing unauthenticated access to Docker management APIs when AGENT_SECRET is unset or empty. Source review supports the fail-open authentication condition and shows that the fix requires signature verification by default. Runtime exploitation was not independently reproduced.</summary>
   </entry>
   <entry>
     <title>CVE-2026-53710: Python sandbox isolation weakness in MCP Context Forge</title>

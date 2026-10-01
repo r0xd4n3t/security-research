@@ -256,6 +256,45 @@
     },
     {
       "affected_versions": [
+        "Versions before 1.30.4, according to the CVE description."
+      ],
+      "cve_id": "CVE-2026-55494",
+      "cvss": {
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "version": "3.1"
+      },
+      "cvss_display": "9.8 (v3.1)",
+      "cwe": "CWE-284",
+      "fixed_versions": [
+        "1.30.4, according to the CVE description."
+      ],
+      "ghsa_id": null,
+      "kev": {
+        "date_added": null,
+        "listed": false
+      },
+      "manifest_sha256": "0f85f423d4094dd37ac7bd03c84a543d59e2cc7e04a1841f76cf634dd1787489",
+      "paths": {
+        "advisory": "CVE-2026-55494/ADVISORY.md",
+        "directory": "CVE-2026-55494/",
+        "evidence": "CVE-2026-55494/evidence/",
+        "manifest": "CVE-2026-55494/MANIFEST.json",
+        "references": "CVE-2026-55494/REFERENCES.md",
+        "validator": "CVE-2026-55494/poc/"
+      },
+      "published_at": null,
+      "references": [
+        "https://github.com/Quenary/tugtainer/security/advisories/GHSA-wgw2-c96g-p7h7",
+        "https://github.com/Quenary/tugtainer/commit/0052a5544e187a4d12f771838a8a23ca4afb61cd",
+        "https://github.com/Quenary/tugtainer/releases/tag/v1.30.4"
+      ],
+      "summary": "Tugtainer Agent versions before 1.30.4 are described as allowing unauthenticated access to Docker management APIs when AGENT_SECRET is unset or empty. Source review supports the fail-open authentication condition and shows that the fix requires signature verification by default. Runtime exploitation was not independently reproduced.",
+      "title": "CVE-2026-55494: Tugtainer Agent authentication bypass when AGENT_SECRET is unset"
+    },
+    {
+      "affected_versions": [
         "MCP Context Forge python_sandbox_server before 1.0.2, according to the CVE description; the earliest affected release is unspecified.",
         "Version 1.0.1 was the vulnerable laboratory control."
       ],
@@ -295,8 +334,8 @@
       "title": "CVE-2026-53710: Python sandbox isolation weakness in MCP Context Forge"
     }
   ],
-  "advisory_count": 6,
-  "generated_at": "2026-10-01T04:47:04.155471Z",
+  "advisory_count": 7,
+  "generated_at": "2026-10-01T07:49:12.914046Z",
   "maintainer": "r0xd4n3t",
   "repository": "https://github.com/r0xd4n3t/security-research",
   "schema_version": 1

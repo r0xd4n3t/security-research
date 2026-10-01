@@ -140,6 +140,24 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
           <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971/poc">Validator</a>
         </div>
       </article>
+      <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-55494 cve-2026-55494: tugtainer agent authentication bypass when agent_secret is unset cwe-284">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-55494">CVE-2026-55494</a>
+          <span class="badge crit">CVSS 9.8 (v3.1)</span>
+
+        </div>
+        <h2>CVE-2026-55494: Tugtainer Agent authentication bypass when AGENT_SECRET is unset</h2>
+        <p>Tugtainer Agent versions before 1.30.4 are described as allowing unauthenticated access to Docker management APIs when AGENT_SECRET is unset or empty. Source review supports the fail-open authentication condition and shows that the fix requires signature verification by default. Runtime exploitation was not independently reproduced.</p>
+        <div class="meta">
+          <span class="badge">CWE-284</span>
+
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-55494/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-55494/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-55494/poc">Validator</a>
+        </div>
+      </article>
       <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-53710 cve-2026-53710: python sandbox isolation weakness in mcp context forge cwe-94">
         <div class="row">
           <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-53710">CVE-2026-53710</a>
@@ -160,7 +178,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
       </article>
     </section>
     <footer>
-      Updated 2026-10-01 · 6 advisories · Every conclusion is limited to the retained validation evidence.
+      Updated 2026-10-01 · 7 advisories · Every conclusion is limited to the retained validation evidence.
     </footer>
   </div>
   <script>
