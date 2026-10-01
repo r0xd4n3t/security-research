@@ -243,7 +243,7 @@
         "references": "CVE-2026-59971/REFERENCES.md",
         "validator": "CVE-2026-59971/poc/"
       },
-      "published_at": null,
+      "published_at": "2026-09-30T23:40:29.995226Z",
       "references": [
         "https://github.com/designcomputer/mysql_mcp_server/security/advisories/GHSA-rqfv-2mw9-78g2",
         "https://github.com/designcomputer/mysql_mcp_server/commit/a96549f4a4d65443fd6e9c7f2324fba9a5c80a82",
@@ -253,10 +253,50 @@
       ],
       "summary": "MySQL MCP Server before 0.4.2 is reported to expose unauthenticated database operations when SSE transport is enabled and to lack DNS-rebinding protection. An isolated regression test independently confirmed that v0.4.1 accepted a forged Host value while v0.4.2 rejected it with MCP SDK 1.30.0. This establishes the Host-validation primitive; database access and browser-mediated exploitation were not reproduced. Default stdio transport is reported unaffected.",
       "title": "CVE-2026-59971: MySQL MCP Server SSE transport lacks Host validation"
+    },
+    {
+      "affected_versions": [
+        "MCP Context Forge python_sandbox_server before 1.0.2, according to the CVE description; the earliest affected release is unspecified.",
+        "Version 1.0.1 was the vulnerable laboratory control."
+      ],
+      "cve_id": "CVE-2026-53710",
+      "cvss": {
+        "score": 10.0,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "version": "3.1"
+      },
+      "cvss_display": "10 (v3.1)",
+      "cwe": "CWE-94",
+      "fixed_versions": [
+        "1.0.2, identified as fixed by the CVE description and used as the patched laboratory control."
+      ],
+      "ghsa_id": null,
+      "kev": {
+        "date_added": null,
+        "listed": false
+      },
+      "manifest_sha256": "440459759525f1d9fd65f356e783da6fe6ba59597f10b39045f6ecf8d262cc80",
+      "paths": {
+        "advisory": "CVE-2026-53710/ADVISORY.md",
+        "directory": "CVE-2026-53710/",
+        "evidence": "CVE-2026-53710/evidence/",
+        "manifest": "CVE-2026-53710/MANIFEST.json",
+        "references": "CVE-2026-53710/REFERENCES.md",
+        "validator": "CVE-2026-53710/poc/"
+      },
+      "published_at": null,
+      "references": [
+        "https://github.com/IBM/mcp-context-forge/security/advisories/GHSA-xm98-3vcf-fph7",
+        "https://github.com/IBM/mcp-context-forge/commit/63a2900e6301b9c8a483a38d3737a1beb3a7ce89",
+        "https://github.com/IBM/mcp-context-forge/releases/tag/v1.0.2"
+      ],
+      "summary": "CVE-2026-53710 affects the python_sandbox_server subproject of MCP Context Forge before version 1.0.2. Unrestricted attribute access and incomplete sandbox guards undermine Python code isolation. The upstream CVE description reports potential OS command execution through the execute_code tool. Laboratory control results establish a vulnerable-versus-patched configuration difference; runtime sandbox escape and command execution remain unverified. The core gateway and proxy components are not directly affected.",
+      "title": "CVE-2026-53710: Python sandbox isolation weakness in MCP Context Forge"
     }
   ],
-  "advisory_count": 5,
-  "generated_at": "2026-09-30T23:40:27.913418Z",
+  "advisory_count": 6,
+  "generated_at": "2026-10-01T00:04:27.551993Z",
   "maintainer": "r0xd4n3t",
   "repository": "https://github.com/r0xd4n3t/security-research",
   "schema_version": 1

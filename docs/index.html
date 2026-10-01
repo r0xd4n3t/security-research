@@ -140,9 +140,27 @@ footer{color:var(--mut);font-size:.85rem;margin-top:32px;border-top:1px solid va
           <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-59971/poc">Validator</a>
         </div>
       </article>
+      <article class="card" data-sev="crit" data-kev="0" data-text="cve-2026-53710 cve-2026-53710: python sandbox isolation weakness in mcp context forge cwe-94">
+        <div class="row">
+          <a class="cve" href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-53710">CVE-2026-53710</a>
+          <span class="badge crit">CVSS 10 (v3.1)</span>
+
+        </div>
+        <h2>CVE-2026-53710: Python sandbox isolation weakness in MCP Context Forge</h2>
+        <p>CVE-2026-53710 affects the python_sandbox_server subproject of MCP Context Forge before version 1.0.2. Unrestricted attribute access and incomplete sandbox guards undermine Python code isolation. The upstream CVE description reports potential OS command execution through the execute_code tool. Laboratory control results establish a vulnerable-versus-patched configuration difference; runtime sandbox escape and command execution remain unverified. The core gateway and proxy components are not directly affected.</p>
+        <div class="meta">
+          <span class="badge">CWE-94</span>
+
+        </div>
+        <div class="links">
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-53710/ADVISORY.md">Advisory</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-53710/evidence">Evidence</a>
+          <a href="https://github.com/r0xd4n3t/security-research/tree/main/CVE-2026-53710/poc">Validator</a>
+        </div>
+      </article>
     </section>
     <footer>
-      Updated 2026-09-30 · 5 advisories · Every conclusion is limited to the retained validation evidence.
+      Updated 2026-10-01 · 6 advisories · Every conclusion is limited to the retained validation evidence.
     </footer>
   </div>
   <script>
